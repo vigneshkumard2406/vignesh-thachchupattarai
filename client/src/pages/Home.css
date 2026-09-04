@@ -1,0 +1,132 @@
+.hero-section {
+  background: linear-gradient(rgba(31, 22, 16, 0.75), rgba(31, 22, 16, 0.85)),
+    url('https://images.unsplash.com/photo-1540518614846-7ede433c4ef2?q=80&w=1600&auto=format&fit=crop') center/cover;
+  padding: 8rem 0;
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-title {
+  font-size: 3.4rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.hero-desc {
+  font-size: 1.15rem;
+  color: #e5ded4;
+  margin-bottom: 2.2rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.hero-actions .btn-secondary {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.hero-actions .btn-secondary:hover {
+  background-color: #ffffff;
+  color: var(--wood-dark);
+}
+
+.hero-features {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.feat-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #d1c8bd;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pillar-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--wood-amber);
+}
+
+.pillar-icon {
+  width: 54px;
+  height: 54px;
+  background-color: var(--wood-light);
+  color: var(--wood-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.25rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.pillar-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.cta-banner {
+  background-color: var(--wood-walnut);
+  color: #ffffff;
+}
+
+.banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.banner-title {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-sub {
+  color: var(--wood-light);
+}
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .banner-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
