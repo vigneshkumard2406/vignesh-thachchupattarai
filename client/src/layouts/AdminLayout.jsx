@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { LayoutDashboard, Wrench, FolderKanban, MessageSquareDot, LogOut, Hammer, ExternalLink } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import './AdminLayout.css';
+//import './AdminLayout.css';
 
 const AdminLayout = () => {
   const { logout, admin } = useAuth();
